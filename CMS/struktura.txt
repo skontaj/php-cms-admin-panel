@@ -36,27 +36,3 @@ admin
 
 
 
---------- pusher -----------
-
-
-/project-root/
-│
-├── /vendor/                      # automatski kreira Composer
-│
-├── /core/
-│   └── PusherClient.php          # NOVO: Pusher helper klasa (može i u Classes/)
-│
-├── /public/
-│   ├── index.php
-│   ├── js/
-│   │   └── pusher-listener.js    # JavaScript za real-time prikaz
-│   └── heartbeat.php             # AJAX "ping" svakih 60 sekundi
-│
-├── /routes/
-│   └── web.php                   # Dodaj heartbeat i logout rute
-│
-├── /Views/admin/
-│   ├── users.php                 # Tu prikazuješ aktivne korisnike
-│   └── dashboard.php             # Uključi JS za slušanje
-│
-└── composer.json
