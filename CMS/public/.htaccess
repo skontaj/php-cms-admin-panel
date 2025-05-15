@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Ako zahtevani fajl ili folder NE postoji
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Prosledi zahtev index.php fajlu
+RewriteRule ^ index.php [QSA,L]
